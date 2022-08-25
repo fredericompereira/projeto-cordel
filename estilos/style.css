@@ -1,0 +1,116 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --fonte-titulo: 'Passion One', sans-serif;
+    --fonte-texto: 'Merriweather', serif;
+    --fonte-verso: 'Sriracha',  sans-serif;
+    --tamanho-titulo: 5em;
+    --tamanho-texto: 1.2em;
+    --tamanho-verso: 1.3em;
+    --cor0: #C18340;
+    --cor1: #b45f06;
+    --cor2: #783f04;
+    --cor3: #824504;
+    --cor4: #361C02;
+    --cor5: #362412;
+    --cor-fundo: #e6e6e6;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--cor-fundo);
+}
+
+#cabecalho-site {
+    max-width: 740px;
+    margin: 0 auto 50px auto;
+    padding: 30px 40px;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(180deg, var(--cor1), var(--cor2));
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 10px #00000070;
+}
+
+#titulo-site {
+    font-family: var(--fonte-titulo);
+    font-size: var(--tamanho-titulo);
+    font-variant: small-caps;
+}
+
+p {
+    font-family: var(--fonte-texto);
+    font-size: var(--tamanho-texto);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin: 0 auto 50px auto;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0px 10px #00000070;
+}
+
+.estrofe {
+    font-family: var(--fonte-verso);
+    font-size: var(--tamanho-verso);
+    line-height: 2em;
+    padding-bottom: 1.5em;
+}
+
+.container-estrofe-padrao {
+    padding: 8vh 30px;
+}
+
+.container-estrofe-imagem {
+    padding: 8vh 20px;
+    background-color: var(--cor-fundo);
+    box-shadow: inset 0px 0px 20px 0px #00000070;
+}
+
+.container-estrofe-imagem > .estrofe {
+    width: fit-content;
+    padding: 10px;
+    color: white;
+    background-color: #00000080;
+    border-radius: 20px;
+}
+
+#img01 {
+    background: url(../imagens/background001.jpg) right center fixed;
+    background-size: cover;
+}
+
+#img02 {
+    background: url(../imagens/background002.jpg) right center fixed;
+    background-size: cover;
+}
+
+footer {
+    max-width: 770px;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(180deg, var(--cor1), var(--cor2));
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 4px 10px #00000070;
+}
